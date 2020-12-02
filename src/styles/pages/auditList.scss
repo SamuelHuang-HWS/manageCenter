@@ -1,0 +1,29 @@
+.audit-list{
+  .content-tabs{
+    margin-top: 11px;
+    padding-top: 42px;
+    background: #fff;
+    .el-tabs__header {
+      margin: 0px;
+      padding-left: 50px;
+    }
+    .el-tabs__item{
+      padding: 0 25px;
+      height:52px;
+      line-height: 52px;
+      font-family: PingFangSC-Medium;
+      font-size: 16px;
+      color: rgba(38,38,38,1);
+      &.is-active{
+        color: rgba(255,110,0,1);
+      }
+    }
+    .el-tabs__active-bar{
+      background-color: #FF6E00;
+    }
+    .el-tabs__nav-wrap::after {
+      content: "";
+      background-color: transparent;
+    }
+  }
+}

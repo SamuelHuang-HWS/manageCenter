@@ -1,0 +1,143 @@
+$color:#266CEE;
+.c-title{
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  line-height: 16px;
+  height:16px;
+  color: rgba(44,52,67,1);
+  &:before{
+    content:'';
+    display: inline-block;
+    width: 4px;
+    height:16px;
+    background: url("~@/assets/item-left.png") no-repeat;
+    vertical-align: bottom;
+    margin-right: 6px;
+    background-size:contain ;
+  }
+}
+.c-title-wrap{
+  height:54px;
+  padding: 17px 20px;
+  background: rgba(250,251,253,1);
+  margin-bottom: 10px;
+  .c-title{
+    font-size: 14px;
+    line-height: 14px;
+    height:14px;
+    &:before{
+      width: 4px;
+      height:13px;
+      margin-right: 10px;
+    }
+  }
+}
+.content::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 0px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.content::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: #535353;
+}
+.content::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background: #EDEDED;
+}
+
+/*编辑器*/
+.tox-tinymce {
+  border: 1px solid #EFEFF3 !important;
+  .tox-editor-container{
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    .wordCount{
+      text-align: right;
+      padding: 10px;
+      font-family: JDZhengHT-EN-Regular;
+      font-size: 14px;
+      color: #c3cbd6;
+    }
+  }
+  .tox-statusbar{
+    .tox-statusbar__path-item{
+
+    }
+  }
+  .tox-toolbar{
+    background: none;
+    &:last-child{
+      border-top: 1px solid rgba(234,235,240,1);
+      //border-bottom: 1px solid rgba(234,235,240,1);
+    }
+    &:first-child{
+      height:60px;
+      line-height: 60px;
+      background: #F7F7F7;
+      .tox-toolbar__group{
+        width:100%;
+        height:100%;
+        padding-left: 20px;
+        background:none;
+        button{
+          width:80px;
+          height:20px;
+          cursor: pointer;
+        }
+        &:after{
+          display: block;
+          content:'\002a\4e3a\907f\514d\7248\6743\7ea0\7eb7\ff0c\8bf7\60a8\4e0a\4f20\6709\7248\6743\7684\56fe\7247';
+          font-family: PingFangSC-Regular;
+          font-size: 12px;
+          color: rgba(154,154,154,1);
+          margin-left: 10px;
+        }
+      }
+    }
+    &:last-child{
+      .tox-toolbar__group {
+        /*padding: 10px 15px;*/
+        .tox-tbtn {
+          width: auto;
+          padding: 0 8px;
+          cursor: pointer;
+          &:hover{
+            background: #F1F3F7;
+          }
+          svg {
+            display: block;
+            fill: #666666;
+          }
+        }
+        .tox-tbtn--enabled{
+          background: none;
+          &:hover{
+            background: #F1F3F7;
+          }
+        }
+        &:not(:last-of-type) {
+          border-right: 1px solid rgba(234,235,240,1);
+        }
+      }
+    }
+  }
+}
+//图片上传
+.loaded {
+  /deep/.el-upload-list{
+    display:block !important;
+  }
+  /deep/.el-upload--picture-card{
+    display:none;
+  }
+  /deep/.item-conver{
+    display: none;
+  }
+}
+
+.mar-top-40{
+  margin-top: 40px;
+}

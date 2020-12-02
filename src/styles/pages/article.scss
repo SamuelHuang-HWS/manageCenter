@@ -1,0 +1,136 @@
+.article{
+  .wrap{
+    padding:24px 20px 30px 20px;
+    background: #ffffff;
+    .content-item{
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: rgba(44,52,67,1);
+      margin-top: 20px;
+      p{
+        width: 107px;
+        text-align: right;
+        margin-right:10px;
+        flex-shrink: 0;
+        span{
+          color:#F62458;
+          margin-right: 5px;
+        }
+      }
+      .el-input__inner {
+        height:32px;
+        line-height: 32px;
+        border: 1px solid #E5E8EC;
+        &::placeholder {
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: rgba(195,203,214,1);
+        }
+      }
+      .el-input__count,
+      .el-input__count-inner{
+        font-family: JDZhengHT-EN-Regular;
+        font-size: 14px;
+        color: rgba(195,203,214,1);
+      }
+      .el-upload--picture-card {
+        background-color: transparent;
+        border: none;
+        line-height: normal;
+      }
+      .el-radio__input.is-checked .el-radio__inner {
+        border: none;
+        background: url("~_img/radio-checked.png") no-repeat;
+      }
+      .el-radio__input.is-checked+.el-radio__label {
+        color: #5F5F6B;
+      }
+      .tab{
+        display: inline-block;
+        width: 104px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border: 1px solid rgba(216,220,229,1);
+        border-radius: 4px;
+        margin-right: 30px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: rgba(95,95,107,1);
+        margin-bottom: 10px;
+      }
+      .disease-tab-list{
+        .disease-tab{
+          display: inline-block;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background: rgba(255,110,0,0.12);
+          border-radius: 2px;
+          padding: 0 16px;
+          margin-right: 28px;
+          cursor: pointer;
+          color:#FF6E00;
+          position: relative;
+          margin-bottom: 20px;
+          img{
+            position: absolute;
+            top:-8px;
+            right:-8px;
+            width:15px;
+            height:15px;
+            background-size: 15px;
+          }
+        }
+        .disease-tab-add{
+          border:1px dashed rgba(154,154,154,1);
+          background: rgba(255,255,255,1);
+          color: rgba(38,38,38,1);
+          &::before{
+            content:'';
+            display: inline-block;
+            width:12px;
+            height:12px;
+            background: url("~_img/add.png") no-repeat;
+            background-size: 12px;
+          }
+          &::after{
+            display: none;
+          }
+        }
+      }
+    }
+    .category-title{
+      margin: 20px 0 36px 34px;
+      font-family: PingFangSC-Medium;
+      font-size: 14px;
+      color: rgba(51,56,64,1);
+    }
+    .item-width{
+      .el-input__inner {
+        width: 245px;
+      }
+      .el-input__icon{
+        line-height: 32px;
+      }
+    }
+    .item-conver{
+      width: 230px;
+      height: 150px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: #989CA5;
+      img{
+        margin-bottom: 8px;
+      }
+    }
+    .tips{
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: rgba(255,155,57,1);
+      margin:10px auto 20px 117px;
+    }
+  }
+}
